@@ -1,0 +1,35 @@
+/* src/styles/payment.css */
+.payment {
+  max-width: 600px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  margin: 50px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+.payment h1{
+  color: white;
+}
+
+.payment-summary {
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.pay-btn {
+  padding: 12px 24px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #ff7875;
+}

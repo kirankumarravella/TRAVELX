@@ -1,0 +1,78 @@
+/* src/styles/auth.css */
+
+/* Background styling */
+.auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.unsplash.com/photo-1519608487953-e999c86e7455")
+      no-repeat center center/cover;
+  }
+  
+  /* Form styling */
+  .auth-card {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark card */
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+  }
+  
+  /* Title */
+  .auth-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Input styling */
+  .auth-input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .auth-input:focus {
+    border: 2px solid #8f94fb;
+  }
+  
+  /* Button styling */
+  .auth-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(45deg, #007bff, #6a11cb);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .auth-btn:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(45deg, #0056b3, #4e54c8);
+  }
+  
+  /* Toggle link */
+  .auth-toggle {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .auth-toggle:hover {
+    color: #8f94fb;
+  }
+  

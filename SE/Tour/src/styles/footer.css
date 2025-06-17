@@ -1,0 +1,41 @@
+.footer {
+  background: #121212;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Centers the columns */
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 2rem; /* Adds spacing between columns */
+}
+
+.footer-column {
+  min-width: 200px;
+  margin: 0.5rem;
+  text-align: center; /* Centers text inside the columns */
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-column ul {
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}

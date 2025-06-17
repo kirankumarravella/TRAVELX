@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  height: auto;
+  background: #f8f8f8;
+  color: rgb(250, 250, 250);
+  transition: background 0.5s ease-in-out; /* Smooth transition for background */
+}
+
+.packages {
+  min-height: 100vh;
+  padding: 40px;
+  transition: background 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Search and filter container */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar, .category-filter {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Package grid layout */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 40px;
+  justify-items: center;
+}
+
+/* Package card */
+.package-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  max-width: 350px;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Package image */
+.package-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Package info */
+.package-info {
+  padding: 15px;
+}
+
+.package-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.package-info p {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Book button */
+.book-btn {
+  padding: 12px 20px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #ff7875;
+}
+
+/* No results */
+.no-results {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: black;
+}
+
+.load-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #005ecc;
+}
+

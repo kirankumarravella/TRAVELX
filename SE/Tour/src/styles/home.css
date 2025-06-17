@@ -1,0 +1,339 @@
+/* Home Section */
+.home {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Reduced height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.image-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+}
+
+.image-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-slider img.active {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #007bff, #6a11cb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.service-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #6a11cb, #007bff);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.service-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #007bff, #6a11cb);
+}
+
+/* About Us Section */
+.about {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  color: black;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.about-text {
+  width: 50%;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.read-more:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    height: 50vh;
+  }
+
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .service-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
+/* Popular Destinations */
+.popular-destinations {
+  padding: 3rem 2rem;
+   background: white;
+  text-align: center;
+}
+
+.popular-destinations h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.destinations-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.destination-card {
+  background: rgb(246, 248, 253);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  margin: 1rem 0;
+  color: black;
+}
+
+.destination-card button {
+  margin-bottom: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  transform: scale(1.03);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 3rem 2rem;
+  background: #ba86f7;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.testimonial-card p{
+  color: black;
+}
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+}
+
+.testimonial-card strong {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card h3 {
+  margin-bottom: 1rem;
+  color: black;
+}
+.benefit-card p{
+  color: black;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: linear-gradient(90deg, #4274a8, #6810c5);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.cta-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-banner button {
+  padding: 1rem 2rem;
+  background: white;
+  color: #007bff;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cta-banner button:hover {
+  transform: scale(1.05);
+}

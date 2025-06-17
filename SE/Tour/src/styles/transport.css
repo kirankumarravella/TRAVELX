@@ -1,0 +1,113 @@
+/* General Page Styling */
+.transport {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fde2e4, #cde7f0, #d0f4de);
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Description Header */
+.transport-description {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.transport-description h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #444444;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.transport-description p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+/* Skip Button */
+.skip-btn {
+  background: #1d368b;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.skip-btn:hover {
+  background: #dd6ece;
+  transform: translateY(-2px);
+}
+
+/* Transport Options Grid */
+.transport-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 in a row */
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 2rem;
+}
+
+/* Transport Card */
+.transport-card {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.transport-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.transport-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.transport-card h2 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: #444444;
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .transport-options {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+
+  .transport-description h1 {
+    font-size: 2.2rem;
+  }
+
+  .transport-description p {
+    font-size: 1rem;
+  }
+
+  .skip-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,55 @@
+.navbar {
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #111;
+}
+
+.navbar.dark {
+  background: #111;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #007bff, #6a11cb);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #007bff;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,93 @@
+.flight-booking {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(135deg, #f6f1f1, #e0f7fa, #f0f4c3);
+  height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-options {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 20px;
+  display: inline-block;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-options label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.booking-options input,
+.booking-options select {
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background: #fafafa;
+}
+
+.seat-selection {
+  margin-top: 20px;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background: #b2ebf2;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.seat:hover {
+  background: #80deea;
+}
+
+.seat.selected {
+  background: #ff8a65;
+  color: white;
+}
+
+.confirm-btn {
+  margin-top: 20px;
+  background: #4db6ac;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.confirm-btn:hover {
+  background: #00897b;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 2rem;
+}
